@@ -62,8 +62,8 @@ public class SubscriptionCommand implements ICommand {
                     return;
                 }
                 try {
-                    if (!databaseConnection.hasActiveSubscription(userId)) {
-                        channel.sendMessage(MessageUtil.formattedMessage(new Color(145, 11, 1), "Error", null, "<@" + userId + "> does not have an active generator subscription!")).submit();
+                    if (!databaseConnection.hasRecord(userId)) {
+                        channel.sendMessage(MessageUtil.formattedMessage(new Color(145, 11, 1), "Error", null, "<@" + userId + "> does not have any generator subscriptions on record!")).submit();
                         return;
                     }
                     databaseConnection.removeSubscription(userId);
