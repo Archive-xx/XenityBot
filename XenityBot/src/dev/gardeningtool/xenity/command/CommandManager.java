@@ -4,6 +4,7 @@ import lombok.Getter;
 
 import net.dv8tion.jda.api.entities.TextChannel;
 import net.dv8tion.jda.api.entities.User;
+import net.dv8tion.jda.internal.entities.PrivateChannelImpl;
 
 import java.util.ArrayList;
 import java.util.List;
