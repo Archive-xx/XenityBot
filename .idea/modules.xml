@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Xenity/Xenity.iml" filepath="$PROJECT_DIR$/Xenity/Xenity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/XenityBot/XenityBot.iml" filepath="$PROJECT_DIR$/XenityBot/XenityBot.iml" />
+    </modules>
+  </component>
+</project>

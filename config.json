@@ -1,0 +1,10 @@
+{
+  "Status": "Hypixel!",
+  "Token": "your bot token here",
+  "URL": "sql ip",
+  "Port": 3306,
+  "Username": "sql username",
+  "Password": "sql password",
+  "Database": "sql database",
+  "Prefix": "$"
+}
