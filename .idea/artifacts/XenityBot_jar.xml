@@ -1,0 +1,18 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="XenityBot:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/XenityBot_jar</output-path>
+    <root id="archive" name="XenityBot.jar">
+      <element id="module-output" name="XenityBot" />
+      <element id="extracted-dir" path="$USER_HOME$/Desktop/Code/Libs/mysql-connector-java-8.0.22.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Desktop/Code/Libs/guava-17.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Desktop/Code/Primary dependencies/JDA-4.1.0_84-withDependencies-min.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Desktop/Code/Libs/json-simple-2.1.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Desktop/Code/Libs/lombok.jar" path-in-jar="/" />
+      <element id="library" level="project" name="lombok" />
+      <element id="library" level="project" name="json-simple-2.1.2" />
+      <element id="library" level="project" name="JDA-4.1.0_84-withDependencies-min" />
+      <element id="library" level="project" name="guava-17.0" />
+      <element id="library" level="project" name="mysql-connector-java-8.0.22" />
+    </root>
+  </artifact>
+</component>

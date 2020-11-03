@@ -45,7 +45,10 @@ public class StockManager {
 
     public enum AccountType {
 
-        MINECRAFT("Minecraft");
+        MINECRAFT("Minecraft"),
+        SPOTIFY("Spotify"),
+        NORDVPN("NordVPN"),
+        VYPRVPN("VyprVPN");
 
         public static AccountType getTypeFromName(String name) {
             for (AccountType accountType : values()) {

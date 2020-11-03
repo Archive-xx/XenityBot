@@ -36,6 +36,10 @@ public class SubscriptionCommand implements ICommand {
         }
         String action = args[1];
         long userId = Long.parseLong(args[2]);
+        if (!(isAdmin(channel, user))) {
+            channel.sendMessage(MessageUtil.formattedMessage(new Color(145, 11, 1), "Error", null, "You don't have permission to do this!")).submit();
+            return;
+        }
         switch(action) {
             case "add": {
                 if (args.length != 4) {
