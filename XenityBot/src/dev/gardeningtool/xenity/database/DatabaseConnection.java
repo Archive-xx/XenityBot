@@ -9,6 +9,8 @@ I'm not the best with SQL so forgive any mistakes
  */
 public class DatabaseConnection {
 
+    //Two methods, hasActiveSubcription and hasRecord, are both required
+
     private Connection connection;
 
     public DatabaseConnection(Config config) {
@@ -33,7 +35,7 @@ public class DatabaseConnection {
         PreparedStatement preparedStatement = connection.prepareStatement("INSERT INTO user_data (ID, START, ENDTIME) VALUES (?, ?, ?)");
         preparedStatement.setLong(1, userId);
         preparedStatement.setLong(2, System.currentTimeMillis());
-        preparedStatement.setLong(3, System.currentTimeMillis() + (86400 * 1000 * days));
+        preparedStatement.setLong(3, System.currentTimeMillis() + ((86400 * 1000 * Math.abs(days)));
         preparedStatement.execute();
     }
 

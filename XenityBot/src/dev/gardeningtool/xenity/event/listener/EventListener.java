@@ -8,6 +8,7 @@ import dev.gardeningtool.xenity.event.impl.ServerMessageEvent;
 
 import lombok.AllArgsConstructor;
 
+import net.dv8tion.jda.api.entities.TextChannel;
 import net.dv8tion.jda.api.events.GenericEvent;
 import net.dv8tion.jda.api.events.guild.member.GuildMemberJoinEvent;
 import net.dv8tion.jda.api.events.guild.member.GuildMemberLeaveEvent;
@@ -29,7 +30,7 @@ public class EventListener extends ListenerAdapter {
 	@Override
 	public void onMessageReceived(MessageReceivedEvent event) {
 		try {
-			eventBus.handleEvent(new ServerMessageEvent(event.getAuthor(), event.getMessage().getContentRaw(), event.getTextChannel()));
+			eventBus.handleEvent(new ServerMessageEvent(event.getAuthor(), event.getMessage().getContentRaw(), (TextChannel) event.getChannel()));
 		} catch (Exception ignored) {}
 	}
 
