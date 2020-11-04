@@ -38,7 +38,8 @@ public class DatabaseConnection {
         preparedStatement.setLong(3, System.currentTimeMillis() + Math.abs(((86400 * 1000 * days))));
         preparedStatement.execute();
     }
-
+    
+    //This method varies from hasRecord because hasRecord is only checking if there's a record in the database, not if it's active or not.
     public boolean hasActiveSubscription(long userId) throws SQLException {
         PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM user_data WHERE ID=?;");
         preparedStatement.setLong(1, userId);
